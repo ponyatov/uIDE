@@ -1,0 +1,20 @@
+{
+    "recommendations": [
+        "stkb.rewrap",
+        "ms-vscode.makefile-tools",
+        "IBM.output-colorizer",
+        // formatters
+        "xaver.clang-format",
+        "esbenp.prettier-vscode",
+        "foxundermoon.shell-format",
+        // Linux
+        "ms-vscode-remote.remote-ssh",
+        "coolbear.systemd-unit-file",
+        // misc
+        "usernamehw.errorlens",
+        // Rust
+        "rust-lang.rust-analyzer",
+        "tamasfe.even-better-toml",
+        "vadimcn.vscode-lldb",
+    ]
+}
