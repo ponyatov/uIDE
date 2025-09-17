@@ -36,7 +36,7 @@ pub mod GUI {
     /// code font
     pub mod Font {
         pub const FAMILY: &str = "Monospace";
-        pub const SIZE: f64 = 14.0;
+        pub const SIZE: f64 = 114.0;
     }
     /// theme colors
     pub mod Color {

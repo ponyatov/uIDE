@@ -6,7 +6,6 @@
         "bin/**": true, "tmp/**": true, "ref/**": true,
         "target/**": true,
     },
-    },
     "files.associations": {
         "*.ini": "bcx", "*.f": "bcx"
     },
