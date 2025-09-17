@@ -1,6 +1,7 @@
 #![allow(unused_imports)]
 
 mod config;
+mod gui;
 mod vm;
 
 use memmap2::Mmap;
@@ -19,6 +20,7 @@ fn main() {
         let src = unsafe { Mmap::map(&file).unwrap() };
         eprintln!("\tsize: {} bytes", src.len());
     }
+    gui::run(&String::from("/dev/null")).expect("GUI fault");
 }
 
 fn arg(argc: usize, argv: &str) {

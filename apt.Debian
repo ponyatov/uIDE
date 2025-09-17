@@ -1,3 +1,4 @@
 git make curl fzf
 code meld doxygen clang-format
-libcairo2-dev libpango1.0-dev
+build-essential pkg-config cmake g++ gdb
+libgtk-3-dev
