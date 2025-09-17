@@ -4,7 +4,7 @@
 #![allow(non_upper_case_globals)]
 
 /// VM configuration parameters
-pub mod vm {
+pub mod VM {
     /// max VM memory size
     pub const Msz: usize = 0x10000;
     /// return stack size (max call depth)
