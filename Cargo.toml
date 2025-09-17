@@ -1,0 +1,29 @@
+[package]
+name                    =  "uide"
+version                 =  "0.0.1"
+description             =  "old-fashioned IDE with minimal CPU/RAM requirements"
+authors                 = ["Dmitry Ponyatov <dponyatov@gmail.com>"]
+license                 =  "MIT"
+repository              =  "https://github.com/ponyatov/uide"
+edition                 =  "2024"
+
+[[bin]]
+name                    = "main"
+path                    = "src/main.rs"
+
+[[bin]]
+name                    = "server"
+path                    = "src/server.rs"
+
+[dependencies]
+const_format            = "0.2"
+
+[target.'cfg(target_os = "linux")'.dependencies]
+libc                    = "0.2"
+memmap2                 = "0.9"
+
+[features]
+pc                      = ["i5"]
+i5                      = ["x86_64"]
+x86_64                  = ["linux"]
+linux                   = []
