@@ -18,6 +18,19 @@ path                    = "src/server.rs"
 [dependencies]
 const_format            = "0.2"
 
+# # GUI зависимости
+# druid = "0.8.3"
+# piet = "0.5.0"
+# piet-common = "0.5.0"
+# piet-cairo = "0.5.0"    # для Linux
+
+# # IDE функциональность
+# syntect = "5.0.0"       # подсветка синтаксиса
+# ropey = "1.6.0"         # текстовая структура
+# lsp-types = "0.94.0"    # LSP поддержка
+# toml = "0.8.2"          # конфигурация
+# notify = "5.2.0"        # отслеживание файлов
+
 [target.'cfg(target_os = "linux")'.dependencies]
 libc                    = "0.2"
 memmap2                 = "0.9"
